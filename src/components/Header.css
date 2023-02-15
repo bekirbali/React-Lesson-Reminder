@@ -1,0 +1,14 @@
+header {
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.808), white);
+  padding: 1rem;
+  text-align: end;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+  }
+}

@@ -1,0 +1,35 @@
+.container {
+  background-color: rgba(235, 154, 154, 0.795);
+  width: 80%;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.8rem 0.2rem rgba(148, 9, 9, 0.795);
+}
+
+.lessons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .lessons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lessons {
+    grid-template-columns: 1fr;
+    margin-top: 0.4rem;
+  }
+  h1 {
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+}
