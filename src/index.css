@@ -1,13 +1,62 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: bisque;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+.main h1 {
+  color: rgb(116, 55, 55);
+  font-family: "Zeyada", cursive;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    margin-top: 0.4rem;
+  }
+  .main h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .main {
+    margin-top: 0.2rem;
+    gap: 1rem;
+  }
+  .main h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 210px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
 }
